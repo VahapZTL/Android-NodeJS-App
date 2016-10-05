@@ -1,4 +1,4 @@
-package com.example.caranbula.loginex;
+package com.example.caranbula.loginex.data;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -14,11 +14,20 @@ public class GetLoginRes {
     @SerializedName("data")
     private String data;
 
+    @SerializedName("userID")
+    private String userID;
+
     public String getStatus() {
+
         return status;
     }
 
     public String getData() {
+
         return data;
+    }
+
+    public String getUserID() {
+        return userID;
     }
 }
